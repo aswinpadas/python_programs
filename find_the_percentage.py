@@ -1,3 +1,4 @@
+# Hacker Rank : Find the percentage solution
 if __name__ == '__main__':
     n = int(input())
     student_marks = {}
