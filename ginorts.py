@@ -1,4 +1,4 @@
-# Hacker Rank : ginortS solution
+# Hacker Rank Built-Ins : ginortS solution
 
 if __name__ == '__main__':
     s = sorted(list(input()))
