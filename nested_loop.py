@@ -1,8 +1,5 @@
-""" 
-Hacker Rank Nested List : 
-Qun :Given the names and grades for each student in a class of N students, store them in 
-a nested list and print the name(s) of any student(s) having the second lowest grade.
-"""
+#Hacker Rank Nested List solution
+
 if __name__ == '__main__':
     student_result = []
     for x in range(int(input())):
