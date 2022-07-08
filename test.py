@@ -1,6 +1,8 @@
 # s = 'chcshdcsdcvcgvagc'
 # print("".join(sorted(list(s))))
 
+# a = list(map(int,input("\nEnter the numbers : ").strip().split()))[:n]
+
 # print(*["".join(sorted(list(s)))[i:i + 4] for i in range(0, len(s), 4)], )
 
 # import decimal
@@ -53,5 +55,3 @@
 # B = [3, 4]
 
 # print(" ".join((str(x)) for x in (product(A, B))))
-
-print()
