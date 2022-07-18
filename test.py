@@ -55,3 +55,9 @@
 # B = [3, 4]
 
 # print(" ".join((str(x)) for x in (product(A, B))))
+
+# print(*list(
+#     map("".join,
+#         list(combinations(sorted(word), int(x))
+#              for x in range(1, len(word))))),
+#       sep="\n")
