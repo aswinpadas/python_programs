@@ -1,7 +1,6 @@
 # Hacker Rank Sets => The Captain's Room solution
 
 # my method :
-import collections
 
 from collections import Counter
 
