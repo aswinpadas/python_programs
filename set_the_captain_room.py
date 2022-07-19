@@ -12,8 +12,10 @@ print(*[x for x, y in a.items() if y == 1])
 # _, a = (int(input()), dict(Counter(list(map(int, input().split())))))
 # print(*[x for x in set(a) if a.count(x)==1])
 
-#_____________________________________________________________________________________
-#another method :
+#----------------------------------------------------------------------
+
+# another method : for future refference
+
 # k, arr = int(input()), list(map(int, input().split()))
 
 # myset = set(arr)
