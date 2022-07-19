@@ -68,3 +68,6 @@
 # string, number = sorted(s[0]), int(s[1])
 # for i in range(1, number + 1):
 #     print(*list(map(''.join, itertools.combinations(string, i))), sep='\n')
+a = [1, 2, 3, 4]
+b = [3, 4, 5, 6]
+print()
