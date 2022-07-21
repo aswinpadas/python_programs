@@ -1,4 +1,4 @@
-# Hacker Rank String => Merge the Tools!
+# Hacker Rank String => Merge the Tools! soution
 
 from collections import OrderedDict
 from textwrap import fill
