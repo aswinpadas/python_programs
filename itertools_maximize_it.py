@@ -1,7 +1,11 @@
-# km = list(map(int, input().split()))
-# sum = 0
-# s = (list(map(int, input().split()))[1:] for _ in range(km[0]))
-# print(*[[x**2 % km[1] for x in i] for i in s])
+# Hacker Rank itertools => Maximize it! Solutions
+
+#not completed
+
+km = list(map(int, input().split()))
+sum = 0
+s = (list(map(int, input().split()))[1:] for _ in range(km[0]))
+print(*[[x**2 % km[1] for x in i] for i in s])
 
 # for _ in range(km[0]):
 #     max_of_list = max(list(map(int, input().split())))
