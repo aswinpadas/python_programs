@@ -1,0 +1,17 @@
+# Hacker Rank Collections => Company Logo Solutions
+from collections import Counter
+
+print(*[
+    " ".join(map(str, x))
+    for x in sorted(Counter(input()).items(), key=lambda x: (-x[1], x[0]))[0:3]
+],
+      sep=("\n"))
+
+# Another method : for future reference
+
+# from collections import Counter, OrderedDict
+
+# class OrderedCounter(Counter, OrderedDict):
+#     pass
+
+# [print(*c) for c in OrderedCounter(sorted(input())).most_common(3)]
