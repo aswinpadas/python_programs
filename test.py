@@ -75,6 +75,52 @@
 # b_size, b = (int(input()), set(map(int, input().split())))
 # print(*sorted(list(set(a - b).union(b - a))), sep="\n")
 
-import textwrap
+# import textwrap
 
-print(*[x.split("\n") for x in [textwrap.fill("aabbccdd", 2)]])
+# print(*[x.split("\n") for x in [textwrap.fill("aabbccdd", 2)]])
+
+# def increment(j):
+#     j = [i + 1 for i in j]
+#     print("j in function after increment : ", j)
+
+# j = [5, 6, 7]
+# j
+# print("j before increment : ", j)
+# increment(j)
+# print("j after increment : ", j)
+
+# def double(bonus):
+#     return bonus * 2
+
+# # bonuses = [100, 200, 300]
+
+# # iterator = list(map(double, bonuses))
+# # print(iterator)
+# # print(bonuses)
+
+# # s = {11: 121, 2: 4, 3: 9, 5: 25, 7: 49}
+# # print(s)
+# # print(*{x for x in s.items()})
+
+# def increment(j):
+#     j = [i + 1 for i in j]
+#     print("j in function after increment : ", j)
+
+# j = [5, 6, 7]
+# print("j before append : ", j)
+# k = j
+# print(id(j), id(k))
+# k.append(8)
+# print("k after append : ", k)
+# print("j after append : ", j)
+
+
+def test(x):
+    print(x)
+
+
+p = "helloi"
+q = "hello"
+print(id(p[0]), id(q[0]))
+print(id(p), id(q))
+test(id(p))
