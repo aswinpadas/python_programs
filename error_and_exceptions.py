@@ -1,4 +1,6 @@
-# Haker Rank Exception and Errors => Exceptions soulution
+"""
+Haker Rank Exception and Errors => Exceptions soulution
+"""
 for _ in range(int(input())):
     try:
         a, b = input().split()
