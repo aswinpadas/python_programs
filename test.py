@@ -136,18 +136,32 @@
 # print(float(input()) + 4)
 # print("HackerRank", input())
 
+# def solve(meal_cost, tip_percent, tax_percent):
+#     print(
+#         round(((tip_percent / 100) * meal_cost) +
+#               ((tax_percent / 100) * meal_cost) + meal_cost))
 
-def solve(meal_cost, tip_percent, tax_percent):
-    print(
-        round(((tip_percent / 100) * meal_cost) +
-              ((tax_percent / 100) * meal_cost) + meal_cost))
+# if __name__ == '__main__':
+#     meal_cost = float(input().strip())
 
+#     tip_percent = int(input().strip())
 
-if __name__ == '__main__':
-    meal_cost = float(input().strip())
+#     tax_percent = int(input().strip())
 
-    tip_percent = int(input().strip())
+#     solve(meal_cost, tip_percent, tax_percent)
 
-    tax_percent = int(input().strip())
+n = int(input())
 
-    solve(meal_cost, tip_percent, tax_percent)
+if n % 2 == 1:
+    print("Weird")
+
+else:
+    if n in range(2, 5):
+        print("Not Weird")
+
+    else:
+        if n in range(6, 21):
+            print("Weird")
+
+        else:
+            print("Not Weird")
