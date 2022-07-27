@@ -131,4 +131,7 @@
 # y = 2
 # test(y)
 # print(y)
-print("hello World\n" + input())
+# print("hello World\n" + input())
+print(int(input()) + 4)
+print(float(input()) + 4)
+print("HackerRank", input())
