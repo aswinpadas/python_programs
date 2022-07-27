@@ -125,11 +125,10 @@
 
 # print(list(map(lambda x: x + 1, range(1, 10))))
 
+# def test(x):
+#     x = x + 1
 
-def test(x):
-    x = x + 1
-
-
-y = 2
-test(y)
-print(y)
+# y = 2
+# test(y)
+# print(y)
+print("hello World\n" + input())
