@@ -114,13 +114,13 @@
 # print("k after append : ", k)
 # print("j after append : ", j)
 
+# def test(x):
+#     print(x)
 
-def test(x):
-    print(x)
+# p = "helloi"
+# q = "hello"
+# print(id(p[0]), id(q[0]))
+# print(id(p), id(q))
+# test(id(p))
 
-
-p = "helloi"
-q = "hello"
-print(id(p[0]), id(q[0]))
-print(id(p), id(q))
-test(id(p))
+print(list(map(lambda x: x + 1, range(1, 10))))
