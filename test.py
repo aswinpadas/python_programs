@@ -123,4 +123,13 @@
 # print(id(p), id(q))
 # test(id(p))
 
-print(list(map(lambda x: x + 1, range(1, 10))))
+# print(list(map(lambda x: x + 1, range(1, 10))))
+
+
+def test(x):
+    x = x + 1
+
+
+y = 2
+test(y)
+print(y)
