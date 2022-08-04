@@ -188,7 +188,30 @@
 #         "{} x {} = {}\n".format(count, number, (number * count))
 #         for count in range(1, 11)
 #     ],
-#           sep="\n")
+# #           sep="\n")
 
-testcases = [input() for _ in range(int(input()))]
-print(*[x[0::2] + " " + x[1::2] for x in testcases], sep="\n")
+# testcases = [input() for _ in range(int(input()))]
+# print(*[x[0::2] + " " + x[1::2] for x in testcases], sep="\n")
+
+
+# 30 Days of CodeDay 9: Recursion 3
+def factorial(n):
+
+    if n == 1:
+        return 1
+    else:
+        n = n * factorial(n - 1)
+        print(n)
+    return n
+
+
+if __name__ == '__main__':
+    fptr = open("./result.output", 'w')
+
+    n = int(input().strip())
+
+    result = factorial(n)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
