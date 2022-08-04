@@ -150,18 +150,25 @@
 
 #     solve(meal_cost, tip_percent, tax_percent)
 
-n = int(input())
+# n = int(input())
 
-if n % 2 == 1:
-    print("Weird")
+# if n % 2 == 1:
+#     print("Weird")
 
-else:
-    if n in range(2, 5):
-        print("Not Weird")
+# else:
+#     if n in range(2, 5):
+#         print("Not Weird")
 
-    else:
-        if n in range(6, 21):
-            print("Weird")
+#     else:
+#         if n in range(6, 21):
+#             print("Weird")
 
-        else:
-            print("Not Weird")
+#         else:
+#             print("Not Weird")
+
+if __name__ == '__main__':
+    n = int(input().strip())
+
+    arr = list(map(int, input().rstrip().split()))
+
+    print(*reversed(arr))
