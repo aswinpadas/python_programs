@@ -182,10 +182,13 @@
 #     ],
 #           sep="\n")
 
-if __name__ == '__main__':
-    number = int(input().strip())
-    print(*[
-        "{} x {} = {}\n".format(count, number, (number * count))
-        for count in range(1, 11)
-    ],
-          sep="\n")
+# if __name__ == '__main__':
+#     number = int(input().strip())
+#     print(*[
+#         "{} x {} = {}\n".format(count, number, (number * count))
+#         for count in range(1, 11)
+#     ],
+#           sep="\n")
+
+testcases = [input() for _ in range(int(input()))]
+print(*[x[0::2] + " " + x[1::2] for x in testcases], sep="\n")
