@@ -166,9 +166,26 @@
 #         else:
 #             print("Not Weird")
 
+# if __name__ == '__main__':
+#     n = int(input().strip())
+
+#     arr = list(map(int, input().rstrip().split()))
+
+#     print(*reversed(arr))
+
+# if __name__ == '__main__':
+#     number = int(input().strip())
+#     print(*[
+#         " ".join([str(number), 'x',
+#                   str(count), '=',
+#                   str(number * count)]) for count in range(1, 11)
+#     ],
+#           sep="\n")
+
 if __name__ == '__main__':
-    n = int(input().strip())
-
-    arr = list(map(int, input().rstrip().split()))
-
-    print(*reversed(arr))
+    number = int(input().strip())
+    print(*[
+        "{} x {} = {}\n".format(count, number, (number * count))
+        for count in range(1, 11)
+    ],
+          sep="\n")
