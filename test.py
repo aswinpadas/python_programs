@@ -193,25 +193,26 @@
 # testcases = [input() for _ in range(int(input()))]
 # print(*[x[0::2] + " " + x[1::2] for x in testcases], sep="\n")
 
+# # 30 Days of CodeDay 9: Recursion 3
+# def factorial(n):
 
-# 30 Days of CodeDay 9: Recursion 3
-def factorial(n):
+#     if n == 1:
+#         return 1
+#     else:
+#         n = n * factorial(n - 1)
+#         print(n)
+#     return n
 
-    if n == 1:
-        return 1
-    else:
-        n = n * factorial(n - 1)
-        print(n)
-    return n
+# if __name__ == '__main__':
+#     fptr = open("./result.output", 'w')
 
+#     n = int(input().strip())
 
-if __name__ == '__main__':
-    fptr = open("./result.output", 'w')
+#     result = factorial(n)
 
-    n = int(input().strip())
+#     fptr.write(str(result) + '\n')
 
-    result = factorial(n)
+#     fptr.close()
 
-    fptr.write(str(result) + '\n')
-
-    fptr.close()
+# print(bin(int(input())).split('0b'))
+print(max([len(x) for x in "{0:b}".format(int(input())).split("0")]))
