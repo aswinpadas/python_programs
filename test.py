@@ -215,4 +215,42 @@
 #     fptr.close()
 
 # print(bin(int(input())).split('0b'))
-print(max([len(x) for x in "{0:b}".format(int(input())).split("0")]))
+# print(max([len(x) for x in "{0:b}".format(int(input())).split("0")]))
+# max_sum = -50000
+
+# if (R < 3 or C < 3):
+#     print("Not possible")
+#     exit()
+# for i in range(0, R - 2):
+#     for j in range(0, C - 2):
+#         SUM = (arr[i][j] + arr[i][j + 1] + arr[i][j + 2]) + (
+#             arr[i + 1][j + 1]) + (arr[i + 2][j] + arr[i + 2][j + 1] +
+#                                   arr[i + 2][j + 2])
+#         if (SUM > max_sum):
+#             max_sum = SUM
+#         else:
+#             continue
+
+if __name__ == "__main__":
+    R = 5
+    C = 5
+
+    arr = []
+
+    for _ in range(6):
+        arr.append(list(map(int, input().rstrip().split())))
+
+    sum = 0
+    tarr = []
+    list1 = []
+    for l in range(0, 4):
+        for k in range(0, 4):
+            for i in range(l, l + 3):
+                for j in range(k, k + 3):
+                    if i == l + 1 and (j == k or j == k + 2):
+                        continue
+                    else:
+                        sum += arr[i][j]
+            tarr.append(sum)
+            sum = 0
+    print((tarr))
