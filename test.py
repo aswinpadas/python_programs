@@ -267,35 +267,39 @@
 
 # print(*[y for x, y in grade.items() if 55 in x])
 
-from abc import ABCMeta, abstractmethod
+# from abc import ABCMeta, abstractmethod
 
+# class Book(object, metaclass=ABCMeta):
 
-class Book(object, metaclass=ABCMeta):
+#     def __init__(self, title, author):
+#         self.title = title
+#         self.author = author
 
-    def __init__(self, title, author):
-        self.title = title
-        self.author = author
+#     @abstractmethod
+#     def display(self):
+#         pass
 
-    @abstractmethod
-    def display(self):
-        pass
+# class MyBook(Book):
 
+#     def __init__(self, title, author, price):
+#         self.title = title
+#         self.author = author
+#         self.price = price
 
-class MyBook(Book):
+#     def display(self):
+#         print("Title:", self.title)
+#         print("Author:", self.author)
+#         print("Price:", self.price)
 
-    def __init__(self, title, author, price):
-        self.title = title
-        self.author = author
-        self.price = price
+# title = input()
+# author = input()
+# price = int(input())
+# new_novel = MyBook(title, author, price)
+# new_novel.display()
 
-    def display(self):
-        print("Title:", self.title)
-        print("Author:", self.author)
-        print("Price:", self.price)
+# a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# print([x for x in a])
 
-
-title = input()
-author = input()
-price = int(input())
-new_novel = MyBook(title, author, price)
-new_novel.display()
+if __name__ == '__main__':
+    s = input()
+    print(s if s.isdigit() else "Bad String")
