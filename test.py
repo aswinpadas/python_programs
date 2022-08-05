@@ -287,40 +287,44 @@
 #         self.price = price
 
 #     def display(self):
-#         print("Title:", self.title)
-#         print("Author:", self.author)
-#         print("Price:", self.price)
+# #         print("Title:", self.title)
+# #         print("Author:", self.author)
+# #         print("Price:", self.price)
 
-# title = input()
-# author = input()
-# price = int(input())
-# new_novel = MyBook(title, author, price)
-# new_novel.display()
+# # title = input()
+# # author = input()
+# # price = int(input())
+# # new_novel = MyBook(title, author, price)
+# # new_novel.display()
 
-# a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-# print([x for x in a])
+# # a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# # print([x for x in a])
 
-# if __name__ == '__main__':
-#     s = input()
-#     print(s if s.isdigit() else "Bad String")
-#
+# # if __name__ == '__main__':
+# #     s = input()
+# #     print(s if s.isdigit() else "Bad String")
+# #
 
+# class Calculator:
 
-class Calculator:
+#     def power(self, n, p):
+#         if n < 0 or p < 0:
+#             raise Exception("n and p should be non-negative")
+#         else:
+#             return pow(n, p)
 
-    def power(self, n, p):
-        if n < 0 or p < 0:
-            raise Exception("n and p should be non-negative")
-        else:
-            return pow(n, p)
+# myCalculator = Calculator()
+# T = int(input())
+# for i in range(T):
+#     n, p = map(int, input().split())
+#     try:
+#         ans = myCalculator.power(n, p)
+#         print(ans)
+#     except Exception as e:
+#         print(e)
 
-
-myCalculator = Calculator()
-T = int(input())
-for i in range(T):
-    n, p = map(int, input().split())
-    try:
-        ans = myCalculator.power(n, p)
-        print(ans)
-    except Exception as e:
-        print(e)
+word = input()
+message = "The word, {}, is {} palindrome."
+print(
+    message.format(word, "a") if word ==
+    word[::-1] else message.format(word, "not a"))
