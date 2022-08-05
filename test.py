@@ -231,26 +231,37 @@
 #         else:
 #             continue
 
-if __name__ == "__main__":
-    R = 5
-    C = 5
+# if __name__ == "__main__":
+#     R = 5
+#     C = 5
 
-    arr = []
+#     arr = []
 
-    for _ in range(6):
-        arr.append(list(map(int, input().rstrip().split())))
+#     for _ in range(6):
+#         arr.append(list(map(int, input().rstrip().split())))
 
-    sum = 0
-    tarr = []
-    list1 = []
-    for l in range(0, 4):
-        for k in range(0, 4):
-            for i in range(l, l + 3):
-                for j in range(k, k + 3):
-                    if i == l + 1 and (j == k or j == k + 2):
-                        continue
-                    else:
-                        sum += arr[i][j]
-            tarr.append(sum)
-            sum = 0
-    print((tarr))
+#     sum = 0
+#     tarr = []
+#     list1 = []
+#     for l in range(0, 4):
+#         for k in range(0, 4):
+#             for i in range(l, l + 3):
+#                 for j in range(k, k + 3):
+#                     if i == l + 1 and (j == k or j == k + 2):
+#                         continue
+#                     else:
+#                         sum += arr[i][j]
+#             tarr.append(sum)
+#             sum = 0
+#     print((tarr))
+
+grade = {
+    range(90, 101): "O",
+    range(80, 90): "E",
+    range(70, 80): "A",
+    range(55, 70): "P",
+    range(40, 55): "D",
+    range(0, 40): "T",
+}
+
+print(*[y for x, y in grade.items() if 55 in x])
