@@ -369,12 +369,19 @@ print(order_list) """
 # print(len(words))
 # print(*words.values())
 
-import collections
+# import collections
 
-_, values = input(), sorted(list(map(int, input().split())))
-length = len(values)
-print("{:.1f}".format(sum(values) / len(values)))
-print((values[int(length / 2) - 1] + values[int(length / 2)]) / 2)
-values = collections.Counter(values)
-print(values.most_common()[0][0])
+# _, values = input(), sorted(list(map(int, input().split())))
+# length = len(values)
+# print("{:.1f}".format(sum(values) / len(values)))
+# print((values[int(length / 2) - 1] + values[int(length / 2)]) / 2)
+# values = collections.Counter(values)
+# print(values.most_common()[0][0])
 # print(list(values.keys())[0])
+
+_, v, w = int(input()), list(map(int,
+                                 input().rstrip().split())), list(
+                                     map(int,
+                                         input().rstrip().split()))
+
+print(round((sum([i * j for i, j in zip(v, w)]) / sum(w)), 1))
