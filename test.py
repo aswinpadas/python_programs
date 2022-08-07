@@ -323,8 +323,42 @@
 #     except Exception as e:
 #         print(e)
 
-word = input()
-message = "The word, {}, is {} palindrome."
-print(
-    message.format(word, "a") if word ==
-    word[::-1] else message.format(word, "not a"))
+# word = input()
+# message = "The word, {}, is {} palindrome."
+# print(
+#     message.format(word, "a") if word ==
+#     word[::-1] else message.format(word, "not a"))
+""" from collections import OrderedDict
+import re
+
+ord_dict = OrderedDict()
+
+temp = re.compile("([a-zA-Z]+)([0-9]+)")
+
+order_list = [input().split() for _ in range(int(input()))]
+# order_list = [[temp.match(x).groups()] for x in order_list]
+print(order_list) """
+
+from collections import OrderedDict
+
+ord_dict = OrderedDict()
+# strlist = [[" ".join(x[0:len(x) - 1]),
+#             int(x[len(x) - 1])]
+#            for x in [input().split(" ") for _ in range(int(input()))]]
+for x in [input().split(" ") for _ in range(int(input()))]:
+    ord_dict[" ".join(x[0:len(x) - 1])] = ord_dict.get(
+        " ".join(x[0:len(x) - 1]), 0) + int(x[len(x) - 1])
+print(*[" ".join([i, str(j)]) for i, j in ord_dict.items()], sep="\n")
+
+# from collections import OrderedDict
+# D = OrderedDict()
+# for _ in range(int(input())):
+#     item, space, price = input().rpartition(' ')
+#     D[item] = D.get(item, 0) + int(price)
+# print(*[" ".join([item, str(price)]) for item, price in D.items()], sep="\n")
+
+# for str in strlist:
+#     idx = str.rfind(" ")
+#     item = str[:idx]
+#     num = str[idx:]
+#     print("item = ", item, "count = ", num)
