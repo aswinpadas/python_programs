@@ -339,16 +339,16 @@ order_list = [input().split() for _ in range(int(input()))]
 # order_list = [[temp.match(x).groups()] for x in order_list]
 print(order_list) """
 
-from collections import OrderedDict
+# from collections import OrderedDict
 
-ord_dict = OrderedDict()
-# strlist = [[" ".join(x[0:len(x) - 1]),
-#             int(x[len(x) - 1])]
-#            for x in [input().split(" ") for _ in range(int(input()))]]
-for x in [input().split(" ") for _ in range(int(input()))]:
-    ord_dict[" ".join(x[0:len(x) - 1])] = ord_dict.get(
-        " ".join(x[0:len(x) - 1]), 0) + int(x[len(x) - 1])
-print(*[" ".join([i, str(j)]) for i, j in ord_dict.items()], sep="\n")
+# ord_dict = OrderedDict()
+# # strlist = [[" ".join(x[0:len(x) - 1]),
+# #             int(x[len(x) - 1])]
+# #            for x in [input().split(" ") for _ in range(int(input()))]]
+# for x in [input().split(" ") for _ in range(int(input()))]:
+#     ord_dict[" ".join(x[0:len(x) - 1])] = ord_dict.get(
+#         " ".join(x[0:len(x) - 1]), 0) + int(x[len(x) - 1])
+# print(*[" ".join([i, str(j)]) for i, j in ord_dict.items()], sep="\n")
 
 # from collections import OrderedDict
 # D = OrderedDict()
@@ -362,3 +362,9 @@ print(*[" ".join([i, str(j)]) for i, j in ord_dict.items()], sep="\n")
 #     item = str[:idx]
 #     num = str[idx:]
 #     print("item = ", item, "count = ", num)
+
+import collections
+
+words = collections.Counter([input() for _ in range(int(input()))])
+print(len(words))
+print(*words.values())
