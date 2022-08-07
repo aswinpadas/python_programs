@@ -10,11 +10,11 @@ values = collections.Counter(values)
 print(values.most_common()[0][0])
 """ Solution using Numpy"""
 
-import numpy as np
-from scipy import stats
+# import numpy as np
+# from scipy import stats
 
-size = int(input())
-numbers = list(map(int, input().split()))
-print(np.mean(numbers))
-print(np.median(numbers))
-print(int(stats.mode(numbers)[0]))
+# size = int(input())
+# numbers = list(map(int, input().split()))
+# print(np.mean(numbers))
+# print(np.median(numbers))
+# print(int(stats.mode(numbers)[0]))
