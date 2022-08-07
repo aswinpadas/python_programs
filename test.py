@@ -363,8 +363,18 @@ print(order_list) """
 #     num = str[idx:]
 #     print("item = ", item, "count = ", num)
 
+# import collections
+
+# words = collections.Counter([input() for _ in range(int(input()))])
+# print(len(words))
+# print(*words.values())
+
 import collections
 
-words = collections.Counter([input() for _ in range(int(input()))])
-print(len(words))
-print(*words.values())
+_, values = input(), sorted(list(map(int, input().split())))
+length = len(values)
+print("{:.1f}".format(sum(values) / len(values)))
+print((values[int(length / 2) - 1] + values[int(length / 2)]) / 2)
+values = collections.Counter(values)
+print(values.most_common()[0][0])
+# print(list(values.keys())[0])
