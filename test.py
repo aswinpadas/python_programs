@@ -386,7 +386,10 @@ print(order_list) """
 
 # print(round((sum([i * j for i, j in zip(v, w)]) / sum(w)), 1))
 
-a, b = int(input()), int(input())
-d = divmod(a, b)
-print(*d, sep="\n")
-print(d)
+# a, b = int(input()), int(input())
+# d = divmod(a, b)
+# print(*d, sep="\n")
+# print(d)
+
+a, b, m = int(input()), int(input()), int(input())
+print(pow(a, b), pow(a, b, m), sep="\n")
