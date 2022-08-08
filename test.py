@@ -379,9 +379,14 @@ print(order_list) """
 # print(values.most_common()[0][0])
 # print(list(values.keys())[0])
 
-_, v, w = int(input()), list(map(int,
-                                 input().rstrip().split())), list(
-                                     map(int,
-                                         input().rstrip().split()))
+# _, v, w = int(input()), list(map(int,
+#                                  input().rstrip().split())), list(
+#                                      map(int,
+#                                          input().rstrip().split()))
 
-print(round((sum([i * j for i, j in zip(v, w)]) / sum(w)), 1))
+# print(round((sum([i * j for i, j in zip(v, w)]) / sum(w)), 1))
+
+a, b = int(input()), int(input())
+d = divmod(a, b)
+print(*d, sep="\n")
+print(d)
