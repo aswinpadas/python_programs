@@ -398,6 +398,9 @@ print(order_list) """
 
 # print(*[int(str(x) * x) for x in range(1, int(input()))], sep="\n")
 
-pyra = [1, 22, 333, 4444, 55555, 666666, 7777777, 88888888, 999999999]
-for x in range(0, int(input()) - 1):
-    print(pyra[x])
+# pyra = [1, 22, 333, 4444, 55555, 666666, 7777777, 88888888, 999999999]
+# for x in range(0, int(input()) - 1):
+#     print(pyra[x])
+import numpy as np
+
+print(np.array(list(map(int, input().split()))).reshape(3, 3))
