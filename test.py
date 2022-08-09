@@ -394,4 +394,10 @@ print(order_list) """
 # a, b, m = int(input()), int(input()), int(input())
 # print(pow(a, b), pow(a, b, m), sep="\n")
 
-print(pow(int(input()), int(input())) + pow(int(input()), int(input())))
+# print(pow(int(input()), int(input())) + pow(int(input()), int(input())))
+
+# print(*[int(str(x) * x) for x in range(1, int(input()))], sep="\n")
+
+pyra = [1, 22, 333, 4444, 55555, 666666, 7777777, 88888888, 999999999]
+for x in range(0, int(input()) - 1):
+    print(pyra[x])
