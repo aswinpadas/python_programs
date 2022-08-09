@@ -391,5 +391,7 @@ print(order_list) """
 # print(*d, sep="\n")
 # print(d)
 
-a, b, m = int(input()), int(input()), int(input())
-print(pow(a, b), pow(a, b, m), sep="\n")
+# a, b, m = int(input()), int(input()), int(input())
+# print(pow(a, b), pow(a, b, m), sep="\n")
+
+print(pow(int(input()), int(input())) + pow(int(input()), int(input())))
