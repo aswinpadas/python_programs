@@ -408,18 +408,18 @@ print(order_list) """
 # print(eval(input()) == k)
 # eval(input())
 
-if __name__ == '__main__':
-    nm = input().split()
+# if __name__ == '__main__':
+#     nm = input().split()
 
-    n = int(nm[0])
+#     n = int(nm[0])
 
-    m = int(nm[1])
+#     m = int(nm[1])
 
-    arr = []
+#     arr = []
 
-    for _ in range(n):
-        arr.append(list(map(int, input().rstrip().split())))
+#     for _ in range(n):
+#         arr.append(list(map(int, input().rstrip().split())))
 
-    k = int(input())
-    for x in sorted(arr, key=lambda item: item[k]):
-        print(*x)
+#     k = int(input())
+#     for x in sorted(arr, key=lambda item: item[k]):
+#         print(*x)
