@@ -404,5 +404,22 @@ print(order_list) """
 # import numpy as np
 
 # print(np.array(list(map(int, input().split()))).reshape(3, 3))
-x, k = map(int, input().split())
-print(eval(input()) == k)
+# x, k = map(int, input().split())
+# print(eval(input()) == k)
+# eval(input())
+
+if __name__ == '__main__':
+    nm = input().split()
+
+    n = int(nm[0])
+
+    m = int(nm[1])
+
+    arr = []
+
+    for _ in range(n):
+        arr.append(list(map(int, input().rstrip().split())))
+
+    k = int(input())
+    for x in sorted(arr, key=lambda item: item[k]):
+        print(*x)
