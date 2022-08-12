@@ -423,3 +423,11 @@ print(order_list) """
 #     k = int(input())
 #     for x in sorted(arr, key=lambda item: item[k]):
 #         print(*x)
+
+
+def sumnum(x, y, z):
+    return x + y + z
+
+
+x = [1, 2, 3]
+print(sumnum(*x))
