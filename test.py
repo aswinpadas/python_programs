@@ -424,10 +424,49 @@ print(order_list) """
 #     for x in sorted(arr, key=lambda item: item[k]):
 #         print(*x)
 
+# def sumnum(x, y, z):
+#     return x + y + z
 
-def sumnum(x, y, z):
-    return x + y + z
+# x = [1, 2, 3]
+# print(sumnum(*x))
+
+nums = [
+    3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57,
+    60, 63, 66, 69, 72, 75, 78, 81, 84, 87, 90, 93, 96, 99, 102
+]
+target = 66
+for i in range(0, len(nums)):
+    for j in range(i + 1, len(nums)):
+        if nums[i] + nums[j] == target:
+            print([i, j])
+
+# class TestAddIndices(unittest.TestCase):
+
+#     def test_get_indices_success(self):
+#         nums = [1, 2, 3]
+#         target = 3
+#         actual = get_indices(nums, target)
+#         self.assertEqual(nums[actual[0][0]] + nums[actual[0][1]], target)
+
+#         nums = [2, 4, 6]
+#         target = 10
+#         actual = get_indices(nums, target)
+#         self.assertEqual(nums[actual[0][0]] + nums[actual[0][1]], target)
 
 
-x = [1, 2, 3]
-print(sumnum(*x))
+def get_indices(nums, target):
+    length = len(nums)
+    for i in range(0, ):
+        for j in range(i + 1, length):
+            if nums[i] + nums[j] == target:
+                return ([i, j])
+
+
+print(get_indices([1, 2, 3], 3))
+print(get_indices([3, 2, 4], 6))
+print(get_indices([2, 7, 11, 15], 9))
+print(
+    get_indices([
+        3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54,
+        57, 60, 63, 66, 69, 72, 75, 78, 81, 84, 87, 90, 93, 96, 99, 102
+    ], 15))

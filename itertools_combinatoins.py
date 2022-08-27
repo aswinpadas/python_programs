@@ -1,6 +1,6 @@
 # Hacker Rank Itertools => itertools Combinations solution
 
-from itertools import chain, combinations, permutations
+from itertools import chain, combinations
 
 word, split_length = input().split()
 
