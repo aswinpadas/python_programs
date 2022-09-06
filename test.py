@@ -471,4 +471,4 @@ print(order_list) """
 
 list1 = ['abc', 'efg', 'ijk']
 
-print(['xyz', *list1])  #concatinate using spread or unpack operator
+print(['xyz', *list1])  #concatinate using spread or unpack operator(*)
