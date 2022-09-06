@@ -430,15 +430,15 @@ print(order_list) """
 # x = [1, 2, 3]
 # print(sumnum(*x))
 
-nums = [
-    3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57,
-    60, 63, 66, 69, 72, 75, 78, 81, 84, 87, 90, 93, 96, 99, 102
-]
-target = 66
-for i in range(0, len(nums)):
-    for j in range(i + 1, len(nums)):
-        if nums[i] + nums[j] == target:
-            print([i, j])
+# nums = [
+#     3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57,
+#     60, 63, 66, 69, 72, 75, 78, 81, 84, 87, 90, 93, 96, 99, 102
+# ]
+# target = 66
+# for i in range(0, len(nums)):
+#     for j in range(i + 1, len(nums)):
+#         if nums[i] + nums[j] == target:
+#             print([i, j])
 
 # class TestAddIndices(unittest.TestCase):
 
@@ -453,20 +453,22 @@ for i in range(0, len(nums)):
 #         actual = get_indices(nums, target)
 #         self.assertEqual(nums[actual[0][0]] + nums[actual[0][1]], target)
 
+# def get_indices(nums, target):
+#     length = len(nums)
+#     for i in range(0, ):
+#         for j in range(i + 1, length):
+#             if nums[i] + nums[j] == target:
+#                 return ([i, j])
 
-def get_indices(nums, target):
-    length = len(nums)
-    for i in range(0, ):
-        for j in range(i + 1, length):
-            if nums[i] + nums[j] == target:
-                return ([i, j])
+# print(get_indices([1, 2, 3], 3))
+# print(get_indices([3, 2, 4], 6))
+# print(get_indices([2, 7, 11, 15], 9))
+# print(
+#     get_indices([
+#         3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54,
+#         57, 60, 63, 66, 69, 72, 75, 78, 81, 84, 87, 90, 93, 96, 99, 102
+#     ], 15))
 
+list1 = ['abc', 'efg', 'ijk']
 
-print(get_indices([1, 2, 3], 3))
-print(get_indices([3, 2, 4], 6))
-print(get_indices([2, 7, 11, 15], 9))
-print(
-    get_indices([
-        3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54,
-        57, 60, 63, 66, 69, 72, 75, 78, 81, 84, 87, 90, 93, 96, 99, 102
-    ], 15))
+print(['xyz', *list1])  #concatinate using spread or unpack operator
