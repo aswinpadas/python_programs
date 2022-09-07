@@ -1,0 +1,5 @@
+# Hacker Rank => Set .discard(), .remove() & .pop() solution
+
+n, s = int(input()), set(map(int, input().split()))
+[eval('s.{}({})'.format(*input().split(), '')) for _ in range(int(input()))]
+print(sum(s))

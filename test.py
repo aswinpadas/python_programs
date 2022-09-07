@@ -469,6 +469,11 @@ print(order_list) """
 #         57, 60, 63, 66, 69, 72, 75, 78, 81, 84, 87, 90, 93, 96, 99, 102
 #     ], 15))
 
-list1 = ['abc', 'efg', 'ijk']
+# list1 = ['abc', 'efg', 'ijk']
 
-print(['xyz', *list1])  #concatinate using spread or unpack operator(*)
+# print(['xyz', *list1])  #concatinate using spread or unpack operator(*)
+
+# print(eval('{}+{}'.format('1', '2')))
+s = {1, 2, 3, 4, 5, 6, 7, 8, 9}
+s.pop(0)
+print(s)
