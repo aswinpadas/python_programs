@@ -1,3 +1,7 @@
+# pylint: disable=missing-function-docstring
+# pylint: disable=missing-module-docstring
+
+
 def get_indices(nums, target):
     for i in range(0, length := len(nums)):
         for j in range(i + 1, length):
