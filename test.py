@@ -474,6 +474,49 @@ print(order_list) """
 # print(['xyz', *list1])  #concatinate using spread or unpack operator(*)
 
 # print(eval('{}+{}'.format('1', '2')))
-s = {1, 2, 3, 4, 5, 6, 7, 8, 9}
-s.pop(0)
-print(s)
+# s = {1, 2, 3, 4, 5, 6, 7, 8, 9}
+# s.pop(0)
+# print(s)
+
+# def fibonacci(n):
+#     f_num = [0, 1]
+#     print([[f_num := f_num[x] + f_num[x + 1]] for x in range(n)])
+
+# fibonacci(5)
+
+# [[x := j] for j in range(5)]
+# print(x)
+
+# [cat := [category := 'nfkjfbkw', 'wel' + 'come'][1]]
+
+# print("cat", cat)
+# print('categ', category)
+
+# cat welcome
+# categ nfkjfbkw
+
+# cube = lambda x: x**3
+
+# def fibonacci(n):
+#     fn = [0, 1]
+#     print([[fn[0] := [fn[0] := fn[2], fn[0] + fn[1]]][1] for - in range(n)])
+#     return ([1, 2, 3])
+
+# if __name__ == '__main__':
+#     n = int(input())
+#     print(list(map(cube, fibonacci(n))))
+# x = [0, 1]
+# print([[x := j, k := x + 1] for j in range(5)])
+
+# print(5,lambda x, n: [x[1], x[0] + x[1]]
+
+# Solution for
+
+
+def twoSum(nums: list[int], target: int) -> list[int]:
+    processed_number_dict = dict()
+    for a in range(len(nums)):
+        if (target - nums[a]) in processed_number_dict.keys():
+            return ([a, processed_number_dict[target - nums[a]]])
+        else:
+            processed_number_dict[nums[a]] = a
